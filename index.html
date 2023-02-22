@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,156 @@
   <link rel="stylesheet" href="./styles/index.css">
   <title>Conquest</title>
 </head>
+
 <body>
-  <header>
+  <header class="header">
+    <div class="logo"></div>
+    <nav class="menu">
+      <ul>
+        <li><a class="link link_pos_menu" href="#">Каталог</a></li>
+        <li><a class="link link_pos_menu" href="#">Акция</a></li>
+        <li><a class="link link_pos_menu" href="#">Доставка</a></li>
+        <li><a class="link link_pos_menu" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="icons-header"></div>
 
   </header>
 
   <main>
+    <section class="main">
+      <div class="container">
+        <h2 class="title"><span>Весна/Лето 2019</span>Коллекция</h2>
+        <h1 class="title title_pos_main">Швейцарские часы в&nbsp;наличии в&nbsp;Москве и&nbsp;с&nbsp;доставкой
+          по&nbsp;всему миру
+        </h1>
+        <button class="primary-buttton" type="button">Смотреть каталог</button>
+      </div>
+      <div class="container">
+        <img class="item-image" src="" alt="Часы" srcset="">
+        <p class="item-param item-param_pos_lt">22&nbsp;000&nbsp;&#8381;</p>
+        <p class="item-param item-param_pos_rb">28&nbsp;мм диаметр</p>
+      </div>
+    </section>
 
+    <section class="popular">
+      <h2 class="title">Популярные модели</h2>
+      <a class="link link_pos_popular" href="#">Смотреть все</a>
+      <ul class="card-list">
+        <li class="card">
+          <div class="card__image">
+            <img src="" alt="Часы RADO" srcset="">
+          </div>
+          <h3 class="card__name">RADO</h3>
+          <p class="card__price">65&nbsp;300&nbsp;&#8381;</p>
+          <a class="link link_pos_card" href="#">Подробнее</a>
+        </li>
+        <li class="card">
+          <div class="card__image">
+            <img src="" alt="Часы BVLGARI" srcset="">
+          </div>
+          <h3 class="card__name">BVLGARI</h3>
+          <p class="card__price">81&nbsp;700&nbsp;&#8381;</p>
+          <a class="link link_pos_card" href="#">Подробнее</a>
+        </li>
+        <li class="card">
+          <div class="card__image">
+            <img src="" alt="Часы BVLGARI" srcset="">
+          </div>
+          <h3 class="card__name">BVLGARI</h3>
+          <p class="card__price">72&nbsp;700&nbsp;&#8381;</p>
+          <a class="link link_pos_card" href="#">Подробнее</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="banner">
+      <div class="container">
+        <img class="banner__image" src="" alt="Часы" srcset="">
+        <ul class="pagination">
+          <li class="pagination__btn"><span>&#8249;</span></li>
+          <li class="pagination__number">01</li>
+          <li class="pagination__btn"><span>&#8250;</span></li>
+        </ul>
+      </div>
+      <div class="container">
+        <h2 class="title">Подлинное качество</h2>
+        <p class="description">Все часы производятся в&nbsp;Швейцарии и&nbsp;имеют сертификаты качества. Настоящие
+          швейцарские часы&nbsp;&mdash; это предмет гордости и&nbsp;престижа.
+        </p>
+        <button class="primary-buttton primary-buttton_pos_banner" type="button">Смотреть каталог</button>
+      </div>
+    </section>
+
+    <section class="followus">
+      <div class="container">
+        <h2 class="title">Следите за&nbsp;нашими новостями</h2>
+        <p class="description">Подписывайтесь на <span>@conquest_watch</span> в&nbsp;соцсетях и&nbsp;узнавайте
+          о&nbsp;новинках и&nbsp;акциях первыми.</p>
+      </div>
+
+      <ul class="photo-gallery">
+        <li class="photo-gallery__item">
+          <img src="" alt="Часы" srcset="">
+        </li>
+        <li class="photo-gallery__item">
+          <img src="" alt="Часы" srcset="">
+        </li>
+        <li class="photo-gallery__item">
+          <img src="" alt="Часы" srcset="">
+        </li>
+      </ul>
+
+      <nav>
+        <ul class="social-links">
+          <li><a class="link link_type_social_instagram" href="#" rel="noopener noreferrer">instagram</a></li>
+          <li><a class="link link_type_social_facebook" href="#" rel="noopener noreferrer">facebook</a></li>
+          <li><a class="link link_type_social_twitter" href="#" rel="noopener noreferrer">twitter</a></li>
+        </ul>
+      </nav>
+    </section>
   </main>
 
-  <footer>
-    
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="logo logo_type_ligth logo_pos_footer"></div>
+      <ul class="footer__links">
+        <li><a class="link link_pos_footer" href="tel:+74994504797">8 (499) 450-47-97</a></li>
+        <li><a class="link link_pos_footer" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__container">
+      <h4 class="title title_pos_footer">о&nbsp;компании</h4>
+      <ul class="footer__links">
+        <li><a class="link link_pos_footer" href="#">Наши магазины</a></li>
+        <li><a class="link link_pos_footer" href="#">Вакансии</a></li>
+        <li><a class="link link_pos_footer" href="#">Сертификаты</a></li>
+        <li><a class="link link_pos_footer" href="#">Отзывы</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__container">
+      <h4 class="title title_pos_footer">покупателям</h4>
+      <ul class="footer__links">
+        <li><a class="link link_pos_footer" href="#">Каталог товаров</a></li>
+        <li><a class="link link_pos_footer" href="#">Как заказать?</a></li>
+        <li><a class="link link_pos_footer" href="#">FAQ</a></li>
+        <li><a class="link link_pos_footer" href="#">Корпоративным клиентам</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__container">
+      <h4 class="title title_pos_footer">оплата и&nbsp;доставка</h4>
+      <ul class="footer__links">
+        <li><a class="link link_pos_footer" href="#">Способы оплаты</a></li>
+        <li><a class="link link_pos_footer" href="#">Время доставки</a></li>
+        <li><a class="link link_pos_footer" href="#">Гарантии и&nbsp;ремонт</a></li>
+        <li><a class="link link_pos_footer" href="#">Возврат и&nbsp;компенсация</a></li>
+      </ul>
+    </div>
   </footer>
+
 </body>
+
 </html>
