@@ -1,0 +1,38 @@
+@import ./_reset
+@import ../fonts/fonts
+
+// Colors
+$bg: #FDFDFB
+$menu: #555248
+$primary: #1B1A17
+$secondary: #444240
+
+=background($imgpath, $position: center, $repeat: no-repeat)
+  background:
+    image: url($imgpath)
+    position: $position
+    repeat: $repeat
+
+=font($size, $line, $weight)
+  font-size: $size
+  line-height: $line
+  font-weight: $weight
+
+body
+  background-color: $bg
+  color: $secondary
+  +font(14px, 16px, 400)
+  font-family: 'Roboto', sans-serif
+
+// Reusable styles
+%flexRowSB
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  
+// Component's imports
+@import ./link/_link
+@import ./header/_header
+@import ./logo/_logo
+@import ./icon/_icon

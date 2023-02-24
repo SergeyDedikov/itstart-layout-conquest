@@ -1,0 +1,29 @@
+.icon
+  width: 24px
+  aspect-ratio: 1
+  position: relative
+
+  &_type_search
+    +background('../img/icon_search.svg')
+
+  &_type_liked
+    +background('../img/icon_liked.svg')
+
+  &_type_cart
+    +background('../img/icon_cart.svg')
+
+  & > p
+    @extend %flexRowSB
+    justify-content: center
+    position: absolute
+    right: -4px
+    top: -2px
+    width: 13px
+    aspect-ratio: 1
+    border-radius: 50%
+    background: #E6C8B4
+    color: $primary
+    +font(8px, 1, 400)
+
+  &:hover
+    cursor: pointer
