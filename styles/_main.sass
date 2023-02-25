@@ -1,0 +1,25 @@
+.main
+  @extend %rowJustSpaceBet
+  +background('../img/img_main.png')
+  background-position-x: 70%
+  position: relative
+  margin: 0 auto
+  padding-left: 180px
+  width: 100%
+  height: 768px
+  overflow: hidden
+
+  &__container-info
+    @extend %columnJustCenter
+    max-width: 30%
+    row-gap: 40px
+
+  &__container-param
+    @extend %columnJustCenter
+    justify-content: space-between
+    height: 100%
+    max-width: 670px
+    margin-right: 115px
+    padding: 140px 0 115px
+    flex-grow: 1
+    

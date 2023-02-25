@@ -6,6 +6,8 @@ $bg: #FDFDFB
 $menu: #555248
 $primary: #1B1A17
 $secondary: #444240
+$beige: #D4B098
+$beige-dark: #9e816d
 
 =background($imgpath, $position: center, $repeat: no-repeat)
   background:
@@ -13,26 +15,38 @@ $secondary: #444240
     position: $position
     repeat: $repeat
 
-=font($size, $line, $weight)
+=font($size, $line, $weight: 400)
   font-size: $size
   line-height: $line
   font-weight: $weight
 
 body
+  max-width: 1366px
+  margin: 0 auto
   background-color: $bg
   color: $secondary
-  +font(14px, 16px, 400)
+  +font(14px, 16px)
   font-family: 'Roboto', sans-serif
 
 // Reusable styles
-%flexRowSB
+%rowJustSpaceBet
   display: flex
   flex-direction: row
   justify-content: space-between
   align-items: center
+
+%columnJustCenter
+  display: flex
+  flex-direction: column
+  justify-content: center
   
 // Component's imports
-@import ./link/_link
-@import ./header/_header
-@import ./logo/_logo
-@import ./icon/_icon
+@import ./_link
+@import ./_button
+@import ./_line
+@import ./_header
+@import ./_logo
+@import ./_icon
+@import ./_main
+@import ./_title
+@import ./_param
