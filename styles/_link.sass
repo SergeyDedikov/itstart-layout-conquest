@@ -7,3 +7,23 @@
 
   &_pos_menu
     color: $menu
+
+  &_pos_popular
+    font-family: 'Roboto', sans-serif
+    +font(16px, 19px, 500)
+    align-self: flex-end
+    border-bottom: 1px solid #C4C0B6
+    padding-bottom: 11px
+    transition: all 0.3s
+
+    &:hover
+      text-decoration: none
+      border-bottom-color: $secondary
+      transition: all 0.3s
+
+  &_pos_card
+    position: relative
+    align-self: flex-end
+    font-family: 'Playfair Display', serif
+    +font(16px)
+    color: $primary

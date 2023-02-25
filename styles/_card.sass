@@ -1,0 +1,30 @@
+$size: 313px
+
+.card
+  display: grid
+  grid-template-rows: fit-content(100%)
+  row-gap: 5px
+  width: 370px
+  min-height: 460px
+  padding: 40px
+  margin-top: 25px
+  position: relative
+  background-color: $bg
+  transition: filter 0.3s
+
+  &__background
+    @extend %absoluteCenter
+    width: $size
+    height: $size
+    background: linear-gradient($bg 0 0) padding-box, linear-gradient(270deg, #E2D0C4 0.3%, rgba(226, 208, 196, 0) 99.67%) border-box
+    border: 1px solid transparent
+    border-radius: 50%
+
+  &__image
+    @extend %absoluteCenter
+    width: $size * 0.9
+    @extend %dropShadow
+
+  &:hover
+    @extend %dropShadow
+    transition: filter 0.3s

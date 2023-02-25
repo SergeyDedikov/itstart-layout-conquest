@@ -2,6 +2,7 @@ $size: 50px
 $margin: 15px
 
 .line
+  display: inline-flex
   width: $size
   height: 1px
   background-color: #8B8371
@@ -11,3 +12,8 @@ $margin: 15px
     position: absolute
     left: -($size + $margin * 2)
     top: 50%
+  
+  &_pos_card
+    margin-left: 0
+    vertical-align: middle
+    width: $size * 0.6
