@@ -1,0 +1,35 @@
+$size: 10px
+
+%flexcc
+  display: flex
+  justify-content: center
+  align-items: center
+
+.pagination
+  position: absolute
+  right: $size * 6
+  bottom: calc(0px - $size * 3)
+  @extend %flexcc
+  column-gap: calc($size * 2)
+  height: $size
+
+  &__number,
+  &__btn
+    @extend %flexcc
+
+  &__number
+    font-family: 'Prata', serif
+    +font(12px)
+    color: $primary82
+
+  &__btn
+    width: calc($size / 2)
+    height: $size
+    +background('../img/icon_arrow.svg')
+    cursor: pointer
+
+    &_left
+      transform: rotate(180deg)
+
+    &:hover
+      opacity: 0.7

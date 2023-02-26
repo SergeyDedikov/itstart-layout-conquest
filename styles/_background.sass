@@ -1,0 +1,33 @@
+$size: 365px
+$shift: 30px
+
+.background
+  z-index: -1
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  background-color: $bg
+  overflow: hidden
+
+  &__rectangle
+    width: 470px
+    height: 100%
+    background-color: $bg2
+
+  &__circle
+    position: absolute
+    right: calc($shift - $size / 2)
+    top: calc($shift - $size / 2)
+    width: $size
+    height: $size
+    background: url('../img/figure_ellipse_banner_small.svg') no-repeat
+    transform: rotate(-30deg)
+
+    &:nth-of-type(2)
+      width: $size * 2
+      height: $size * 2
+      right: calc($shift - $size * 1.5)
+      top: 0
+      background-image: url('../img/figure_ellipse_banner_big.svg')
