@@ -1,9 +1,12 @@
 .container
-  @extend %columnJustCenter
-  position: relative
-    
-  &_pos_banner-info, &_pos_followus-info
-    row-gap: 40px
-  
-  &_pos_followus-info
-    max-width: 480px
+  max-width: 1366px
+  margin: 0 auto
+
+  &_pos_footer
+    @extend %rowCC
+    column-gap: 120px
+    padding: 70px 0
+
+  &_pos_header
+    @extend %rowJustSpaceBet
+    padding: 30px 100px

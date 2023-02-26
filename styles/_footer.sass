@@ -1,16 +1,13 @@
 $size: 30px
 
 .footer
-  padding: ($size * 2.3) ($size * 6)
   background-color: $secondary
-  @extend %rowJustSpaceBet
-  align-items: flex-start
-  column-gap: $size * 4
 
   &__links
     margin-top: $size
     display: grid
     row-gap: calc($size / 2)
 
-  &__container:first-of-type
+  &__column:first-of-type
     margin-right: $size
+    align-self: start

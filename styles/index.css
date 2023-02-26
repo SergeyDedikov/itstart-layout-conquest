@@ -57,7 +57,6 @@ ul, ol {
   src: url("./Roboto-Bold.ttf") format("truetype");
 }
 body {
-  max-width: 1366px;
   margin: 0 auto;
   color: #444240;
   font-size: 14px;
@@ -66,20 +65,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.gallery__item, .pagination__number, .pagination__btn, .pagination, .icon > p {
+.gallery__item, .pagination__number, .pagination__btn, .pagination, .icon > p, .container_pos_footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer, .followus, .banner, .main, .header__icons, .header__menu, .header {
+.followus, .banner, .main, .header__icons, .header__menu, .container_pos_header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.main__container-param, .main__container-info, .container {
+.main__container-param, .main__container-info, .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,18 +192,30 @@ body {
 }
 
 .container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.container_pos_footer {
+  -moz-column-gap: 120px;
+       column-gap: 120px;
+  padding: 70px 0;
+}
+.container_pos_header {
+  padding: 30px 100px;
+}
+
+.wrapper {
   position: relative;
 }
-.container_pos_banner-info, .container_pos_followus-info {
+.wrapper_pos_banner-info, .wrapper_pos_followus-info {
   row-gap: 40px;
 }
-.container_pos_followus-info {
+.wrapper_pos_followus-info {
   max-width: 480px;
 }
 
 .header {
   height: 85px;
-  padding: 30px 100px;
 }
 .header__menu {
   -moz-column-gap: 65px;
@@ -216,20 +227,17 @@ body {
 }
 
 .logo {
-  background-image: url("../img/logo_primary.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 26px;
   width: 104px;
 }
 .logo_pos_footer {
-  background-image: url("../img/logo_secondary.svg");
-  background-position: center;
-  background-repeat: no-repeat;
   width: 130px;
   height: 34px;
   margin-top: -15px;
-  background-position-x: -4px;
+  -o-object-position: -4px top;
+     object-position: -4px top;
 }
 
 .icon {
@@ -537,17 +545,14 @@ body {
 }
 
 .footer {
-  padding: 69px 180px;
   background-color: #444240;
-  align-items: flex-start;
-  -moz-column-gap: 120px;
-       column-gap: 120px;
 }
 .footer__links {
   margin-top: 30px;
   display: grid;
   row-gap: 15px;
 }
-.footer__container:first-of-type {
+.footer__column:first-of-type {
   margin-right: 30px;
+  align-self: start;
 }/*# sourceMappingURL=index.css.map */

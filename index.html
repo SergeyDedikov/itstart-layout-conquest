@@ -11,26 +11,29 @@
 
 <body>
   <header class="header">
-    <div class="logo"></div>
-    <nav>
-      <ul class="header__menu">
-        <li><a class="link link_pos_menu" href="#">Каталог</a></li>
-        <li><a class="link link_pos_menu" href="#">Акция</a></li>
-        <li><a class="link link_pos_menu" href="#">Доставка</a></li>
-        <li><a class="link link_pos_menu" href="#">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="header__icons">
-      <div class="icon icon_type_search"></div>
-      <div class="icon icon_type_liked">
-        <p>1</p>
+    <div class="container container_pos_header">
+
+      <img class="logo" src="./img/logo_primary.svg" alt="Логотип"></img>
+      <nav>
+        <ul class="header__menu">
+          <li><a class="link link_pos_menu" href="#">Каталог</a></li>
+          <li><a class="link link_pos_menu" href="#">Акция</a></li>
+          <li><a class="link link_pos_menu" href="#">Доставка</a></li>
+          <li><a class="link link_pos_menu" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__icons">
+        <div class="icon icon_type_search"></div>
+        <div class="icon icon_type_liked">
+          <p>1</p>
+        </div>
+        <div class="icon icon_type_cart"></div>
       </div>
-      <div class="icon icon_type_cart"></div>
     </div>
 
   </header>
 
-  <main>
+  <main class="container">
     <section class="main">
       <div class="main__container-info">
         <div>
@@ -102,7 +105,7 @@
         <div class="background__circle"></div>
         <div class="background__circle"></div>
       </div>
-      <div class="container">
+      <div class="wrapper">
         <img class="banner__image" src="./img/img_banner.jpg" alt="Часы" srcset="">
         <ul class="pagination">
           <li class="pagination__btn pagination__btn_left"></li>
@@ -110,7 +113,7 @@
           <li class="pagination__btn"></li>
         </ul>
       </div>
-      <div class="container container_pos_banner-info">
+      <div class="wrapper wrapper_pos_banner-info">
         <h2 class="title title_pos_banner">Подлинное качество</h2>
         <p class="subtitle">Все часы производятся в&nbsp;Швейцарии и&nbsp;имеют сертификаты качества. Настоящие
           швейцарские часы&nbsp;&mdash; это предмет гордости и&nbsp;престижа.
@@ -120,7 +123,7 @@
     </section>
 
     <section class="followus">
-      <div class="container container_pos_followus-info">
+      <div class="wrapper wrapper_pos_followus-info">
         <h2 class="title">Следите за&nbsp;нашими новостями</h2>
         <p class="subtitle subtitle_pos_followus">Подписывайтесь на <span>@conquest_watch</span> в&nbsp;соцсетях
           и&nbsp;узнавайте
@@ -150,42 +153,45 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__container">
-      <div class="logo logo_pos_footer"></div>
-      <ul class="footer__links">
-        <li><a class="link link_pos_footer" href="tel:+74994504797">8 (499) 450-47-97</a></li>
-        <li><a class="link link_pos_footer" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a></li>
-      </ul>
-    </div>
+    <div class="container container_pos_footer">
 
-    <div class="footer__container">
-      <h4 class="title title_pos_footer">о&nbsp;компании</h4>
-      <ul class="footer__links">
-        <li><a class="link link_pos_footer" href="#">Наши магазины</a></li>
-        <li><a class="link link_pos_footer" href="#">Вакансии</a></li>
-        <li><a class="link link_pos_footer" href="#">Сертификаты</a></li>
-        <li><a class="link link_pos_footer" href="#">Отзывы</a></li>
-      </ul>
-    </div>
+      <div class="footer__column">
+        <img class="logo logo_pos_footer" src="./img/logo_secondary.svg" alt="Логотип"></img>
+        <ul class="footer__links">
+          <li><a class="link link_pos_footer" href="tel:+74994504797">8 (499) 450-47-97</a></li>
+          <li><a class="link link_pos_footer" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a></li>
+        </ul>
+      </div>
 
-    <div class="footer__container">
-      <h4 class="title title_pos_footer">покупателям</h4>
-      <ul class="footer__links">
-        <li><a class="link link_pos_footer" href="#">Каталог товаров</a></li>
-        <li><a class="link link_pos_footer" href="#">Как заказать?</a></li>
-        <li><a class="link link_pos_footer" href="#">FAQ</a></li>
-        <li><a class="link link_pos_footer" href="#">Корпоративным клиентам</a></li>
-      </ul>
-    </div>
+      <div class="footer__column">
+        <h4 class="title title_pos_footer">о&nbsp;компании</h4>
+        <ul class="footer__links">
+          <li><a class="link link_pos_footer" href="#">Наши магазины</a></li>
+          <li><a class="link link_pos_footer" href="#">Вакансии</a></li>
+          <li><a class="link link_pos_footer" href="#">Сертификаты</a></li>
+          <li><a class="link link_pos_footer" href="#">Отзывы</a></li>
+        </ul>
+      </div>
 
-    <div class="footer__container">
-      <h4 class="title title_pos_footer">оплата и&nbsp;доставка</h4>
-      <ul class="footer__links">
-        <li><a class="link link_pos_footer" href="#">Способы оплаты</a></li>
-        <li><a class="link link_pos_footer" href="#">Время доставки</a></li>
-        <li><a class="link link_pos_footer" href="#">Гарантии и&nbsp;ремонт</a></li>
-        <li><a class="link link_pos_footer" href="#">Возврат и&nbsp;компенсация</a></li>
-      </ul>
+      <div class="footer__column">
+        <h4 class="title title_pos_footer">покупателям</h4>
+        <ul class="footer__links">
+          <li><a class="link link_pos_footer" href="#">Каталог товаров</a></li>
+          <li><a class="link link_pos_footer" href="#">Как заказать?</a></li>
+          <li><a class="link link_pos_footer" href="#">FAQ</a></li>
+          <li><a class="link link_pos_footer" href="#">Корпоративным клиентам</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h4 class="title title_pos_footer">оплата и&nbsp;доставка</h4>
+        <ul class="footer__links">
+          <li><a class="link link_pos_footer" href="#">Способы оплаты</a></li>
+          <li><a class="link link_pos_footer" href="#">Время доставки</a></li>
+          <li><a class="link link_pos_footer" href="#">Гарантии и&nbsp;ремонт</a></li>
+          <li><a class="link link_pos_footer" href="#">Возврат и&nbsp;компенсация</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 
