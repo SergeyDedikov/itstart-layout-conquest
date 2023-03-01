@@ -1,7 +1,9 @@
 .main
-  @extend %rowJustSpaceBet
+  display: grid
+  grid: auto-flow / 1fr 785px
+  gap: 50px
   +background('../img/img_main.png')
-  background-position-x: 70%
+  background-position-x: calc(100% - 200px)
   position: relative
   padding-left: 180px
   width: 100%
@@ -11,15 +13,50 @@
 
   &__container-info
     @extend %columnJustCenter
-    max-width: 30%
     row-gap: 40px
 
   &__container-param
     @extend %columnJustCenter
     justify-content: space-between
     height: 100%
-    max-width: 670px
-    margin-right: 115px
+    width: 100%
     padding: 140px 0 115px
-    flex-grow: 1
-    
+    padding-right: 115px
+
+@media screen and ( max-width: 1280px )
+  .main
+    grid: auto-flow / 1fr 590px
+    height: 590px
+    background-size: 500px
+    background-position: calc(100% - 180px) 25%
+
+  .main__container-param
+    padding-right: 100px
+
+@media screen and ( max-width: 1080px )
+  .main
+    height: 770px
+    grid: 350px 400px/auto-flow
+    gap: 0
+    background-size: 490px
+    background-position: calc(100% - 200px) 150%
+
+  .main__container-info
+    row-gap: 30px
+
+  .main__container-param
+    padding: 100px
+
+@media screen and ( max-width: 980px )
+  .main__container-param
+    padding-left: 0
+
+@media screen and ( max-width: 880px )
+  .main
+    height: 890px
+    grid: 350px 500px/auto-flow
+    background-position-y: 125%
+
+  .main__container-param
+    padding-top: 110px
+    padding-bottom: 85px
