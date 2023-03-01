@@ -250,7 +250,7 @@ body {
 .header__menu {
   -moz-column-gap: 65px;
        column-gap: 65px;
-  row-gap: 15px;
+  row-gap: 10px;
   flex-wrap: wrap;
 }
 .header__icons {
@@ -385,6 +385,26 @@ body {
   .main__container-param {
     padding-top: 110px;
     padding-bottom: 85px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    padding-left: 100px;
+    background-position-x: calc(100% - 120px);
+  }
+  .main__container-param {
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main {
+    height: auto;
+    grid: 1fr/auto-flow;
+    padding: 100px;
+    background-image: none;
+  }
+  .main__container-param {
+    display: none;
   }
 }
 .title {
