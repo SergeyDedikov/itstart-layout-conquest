@@ -11,3 +11,10 @@ $size: 30px
   &__column:first-of-type
     margin-right: $size
     align-self: start
+
+@media screen and ( max-width: 1024px )
+  .footer__column:first-of-type
+    flex: 100%
+
+  .footer__links
+    row-gap: calc($size / 6)

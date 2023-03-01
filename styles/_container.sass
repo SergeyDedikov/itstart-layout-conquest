@@ -12,6 +12,7 @@
     @extend %rowJustSpaceBet
     padding: 30px 100px
     column-gap: 65px
+    row-gap: 25px
 
 @media screen and ( max-width: 1024px)
   .container_pos_footer
@@ -25,3 +26,8 @@
   .container_pos_footer, .container_pos_header
     padding-left: 30px
     padding-right: 30px
+
+@media screen and ( max-width: 600px)
+  .container_pos_header
+    flex-wrap: wrap
+    justify-content: center
