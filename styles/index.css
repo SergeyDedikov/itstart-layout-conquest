@@ -652,6 +652,11 @@ body {
     flex-direction: column-reverse;
   }
 }
+@media screen and (max-width: 768px) {
+  .followus {
+    padding: 60px 30px;
+  }
+}
 .solinks {
   margin-top: 80px;
   display: flex;
@@ -678,6 +683,11 @@ body {
      object-fit: cover;
 }
 
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid: 1fr 1fr/40% 1fr;
+  }
+}
 .footer {
   background-color: #444240;
 }
